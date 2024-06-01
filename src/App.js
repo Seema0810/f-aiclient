@@ -37,9 +37,9 @@ const App = () => {
       <BrowserRouter>
         <InputProvider>
           <Routes>
-            {/* <Route path="/signup" element={<Signup />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
-            <Route element={<ProtectedRoute />}> */}
+            <Route element={<ProtectedRoute />}> 
             <Route path="/" element={<Dashboard />} />
             <Route path="/subscription" element={<Subscription />} />
             <Route path="/dashboard/:id" element={<ReportsType />} />
@@ -51,7 +51,7 @@ const App = () => {
             <Route path="/invoice" element={<Invoice />} />
             <Route path="/ledgersetup" element={<LedgerSetup />} />
             <Route path="/journalposting" element={<Journal />} />            
-            {/* </Route> */}
+            </Route> 
           </Routes>
         </InputProvider>
       </BrowserRouter>
