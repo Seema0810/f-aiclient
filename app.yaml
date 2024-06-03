@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f-aiclient
+spec:
+  template:
+    spec:
+      containers:
+        - image: asia-south1-docker.pkg.dev/f-ai-424219/cloud-run-source-deploy/f-aiclient/f-aiclient:f5299f292438422241ecf956b842c9606f37ec5d
+          env:
+            - name: API_BASE_URL
+              value: "https://spheric-rigging-422208-p9.el.r.appspot.com"
+            - name: REACT_APP_API_BASE_URL
+              value: "https://spheric-rigging-422208-p9.el.r.appspot.com"
