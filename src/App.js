@@ -37,7 +37,7 @@ const App = () => {
       <BrowserRouter>
         <InputProvider>
           <Routes>
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/signup" element={<Signup />} />            
             <Route path="/login" element={<Login />} />
             <Route element={<ProtectedRoute />}> 
             <Route path="/" element={<Dashboard />} />
