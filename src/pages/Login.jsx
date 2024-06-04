@@ -8,7 +8,8 @@ import styles from "../styles/login.module.css"; // Import CSS module for login 
 
 const Login = () => {
   console.log("Login component called");
-  const API_BASE_URL= process.env.REACT_APP_API_BASE_URL
+  const API_BASE_URL = "https://spheric-rigging-422208-p9.el.r.appspot.com";
+  // const API_BASE_URL= process.env.REACT_APP_API_BASE_URL
   // const { API_BASE_URL } = configuration;
   const [loading, setLoading] = useState(false);
   const [cookie, setCookie] = useCookies(["token"]);
