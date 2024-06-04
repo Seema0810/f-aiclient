@@ -2,17 +2,18 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
-import configuration from "../config";
+// import configuration from "../config";
 
 import styles from "../styles/login.module.css"; // Import CSS module for login styles
 
 const Login = () => {
   console.log("Login component called");
-  const { API_BASE_URL } = configuration;
+  const API_BASE_URL= process.env.REACT_APP_API_BASE_URL
+  // const { API_BASE_URL } = configuration;
   const [loading, setLoading] = useState(false);
   const [cookie, setCookie] = useCookies(["token"]);
 
-  console.log(API_BASE_URL);
+  console.log("API_BASE_URL", API_BASE_URL);
   // State to store form data
   const [formData, setFormData] = useState({
     email: "",
