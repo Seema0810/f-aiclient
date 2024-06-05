@@ -10,14 +10,15 @@ import EmailIcon from "@mui/icons-material/Email";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
-import configuration from "../config";
+// import configuration from "../config";
 import MenuItemLogout from "../pages/MenuItemLogout";
 
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   // const [showMenu, setShowMenu] = useState(false);
-  const { API_BASE_URL } = configuration;
+  // const { API_BASE_URL } = configuration;
+  const API_BASE_URL = "https://spheric-rigging-422208-p9.el.r.appspot.com";
   const [cookies, setCookie] = useCookies(["token"]);
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
   const navigate= useNavigate();
