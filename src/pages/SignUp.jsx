@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import { useCookies } from "react-cookie";
 import { useNavigate, Link } from "react-router-dom";
 import "../styles/signup.css"; // Import the CSS file
-import configuration from "../config";
+// import configuration from "../config";
 
 const Signup = () => {
-  console.log(configuration)
+  // console.log(configuration)
   const [cookies, setCookie] = useCookies(["token"]);
-  const { API_BASE_URL } = configuration;
+  const API_BASE_URL = "https://spheric-rigging-422208-p9.el.r.appspot.com";
+  // const { API_BASE_URL } = configuration;
   const [formData, setFormData] = useState({
     email: "",
     username: "",
